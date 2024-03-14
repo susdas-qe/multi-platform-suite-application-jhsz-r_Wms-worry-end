@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: multi-platform-suite-component-yzml
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/multi-platform-i-2-tenant/multi-platform-suite-application-jhsz/multi-platform-suite-component-yzml@sha256:a169fc09dd642d7dd6df5eb345958579bbdc1650e421905c788a88499ceb1274
+        name: my-go
+        resources: {}
+status: {}

@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: multi-platform-suite-component-yzml
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: multi-platform-suite-component-yzml
+    app.kubernetes.io/part-of: multi-platform-suite-application-jhsz
+  name: multi-platform-suite-comp8lx0
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: multi-platform-suite-component-yzml
+    weight: null
+status: {}
